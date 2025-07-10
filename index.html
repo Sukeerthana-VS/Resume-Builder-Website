@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Resume Builder</h1>
+        <form id="resumeForm">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="summary">Professional Summary:</label>
+            <textarea id="summary" name="summary" required></textarea>
+
+            <label for="skills">Skills (comma separated):</label>
+            <input type="text" id="skills" name="skills" required>
+
+            <label for="experience">Work Experience:</label>
+            <textarea id="experience" name="experience" required></textarea>
+
+            <label for="education">Education:</label>
+            <textarea id="education" name="education" required></textarea>
+
+            <label for="certifications">Certifications:</label>
+            <textarea id="certifications" name="certifications" placeholder="e.g. AWS Certified Solutions Architect&#10;Google Data Analytics Professional Certificate"></textarea>
+
+            <label for="achievements">Achievements:</label>
+            <textarea id="achievements" name="achievements" placeholder="e.g. Employee of the Month, June 2024&#10;Top 10 in National Coding Olympiad"></textarea>
+
+            <label for="projects">Projects:</label>
+            <textarea id="projects" name="projects" placeholder="e.g. Portfolio Website - Built with React&#10;Resume Builder App - Built with HTML, CSS, JS"></textarea>
+
+            <button type="submit">Build Resume</button>
+        </form>
+        <div id="resumeOutput" class="resume-output"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
